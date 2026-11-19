@@ -1,25 +1,25 @@
 class Kubelint < Formula
   desc "A fast, friendly linter for Kubernetes manifests."
   homepage "https://github.com/YassWorks/kubelint"
-  version "0.21.1"
+  version "0.22.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/YassWorks/kubelint/releases/download/v0.21.1/kubelint-aarch64-apple-darwin.tar.gz"
-      sha256 "121c532240ba3e02d379eb7fc2cd965d422ea7a9871ba9208b7481dc4cd5edea"
+      url "https://github.com/YassWorks/kubelint/releases/download/v0.22.0/kubelint-aarch64-apple-darwin.tar.gz"
+      sha256 "b4a6ef9029b6ac484b7e204a5315c0f8397fb344b366220987e7eacbb9af48ce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/YassWorks/kubelint/releases/download/v0.21.1/kubelint-x86_64-apple-darwin.tar.gz"
-      sha256 "74b7bcd348ff21613cc571f49598f96d13d22157748ac670b2b441ecfd266716"
+      url "https://github.com/YassWorks/kubelint/releases/download/v0.22.0/kubelint-x86_64-apple-darwin.tar.gz"
+      sha256 "81d757cef03943f69344197cacb89a0b9cd56c5ba2f7e96ba95f9dd41c12dcbd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/YassWorks/kubelint/releases/download/v0.21.1/kubelint-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "8e3c2efc0dae18a3f3c961981c2274afb8fffd3187fd0fc2bf7366b5b7ee1bdd"
+      url "https://github.com/YassWorks/kubelint/releases/download/v0.22.0/kubelint-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ec4599c10d2b31d27425237b91da30768d5ca6ea20794f404b885b0ea629fb52"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/YassWorks/kubelint/releases/download/v0.21.1/kubelint-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "aa1d7d20bf211a409f9d34070c77cbca119b214fceef2105ff25ff791dad1609"
+      url "https://github.com/YassWorks/kubelint/releases/download/v0.22.0/kubelint-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "774f624a714b17716515fef6bf2cd1221fbe0129f7a4e85d850030e79d44e5fe"
     end
   end
   license "MIT"
